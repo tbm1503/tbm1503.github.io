@@ -48,10 +48,9 @@
                 <p>Also, file import QA used to require the user to manually create a pivot table based on raw data that they imported. Each pivot table used to be different, given inconsistent formatting across retailers (even within retailers on a file-to-file basis). Implementing a solution for this was relatively simple for retailers with a single location -- I implemented a macro that creates a standardized pivot table under the assumption that the user changes certain column headers to match the column mapping in our database. This was much more difficult for retailers with multiple locations, which required a "Location Name" field within the pivot table. Retailer-submitted location data tended to be wildly inconsistent -- I created a query called "RetailReference" which provided location mapping for standardizing location data. Once this was created, a similar macro was implemented to create a standardized pivot table.</p>
                 <div class="row">
                     <div class="col-md-6">
-                        <img src="HoldingQuery.png" class="img-fluid" alt="Embedded SQL">
+                        <img src="RetailReference.png" class="img-fluid" alt="RetailReference Query">
                     </div>
                     <div class="col-md-6">
-                        <img src="RetailReference.png" class="img-fluid" alt="RetailReference Query">
                         <img src="PIVOT.png" class="img-fluid" alt="Standardized pivot table">
                     </div>
                 </div>
